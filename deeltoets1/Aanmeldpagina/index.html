@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dit is de titel van de pagina</title>
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8" />
+    <meta name="description" content="Dit is opleiding-pagina van Communication and Multimedia Design." />
+    <meta name="author" content="Martijn van Hummel" />
+    <meta name="keywords" content="cmd, communication, and, multimedia, design" />
+    <meta charset="UTF-8">
+<!--     utf-8 betekent westers lettertype. Zorgt ervoor dat je trema's kunt gebruiken zoals ë ö etc -->
+	<link rel="stylesheet" type="text/css" href="./style/style.css">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>					
+				<li><a href="#opleiding">Opleiding</a></li>
+				<li><a href="#onderwijsprogramma">Onderwijsprogramma</a></li>
+				<li><a href="#organisatie">Organisatie</a></li>
+				<li><a href="#stages_en_projecten">Stages en projecten</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<header>
+			<h1>Aanmelden</h1>
+		</header>
+		<article>
+			<p>Bent u geinteresseerd in samenwerken met CMD Amsterdam? Dat kan! Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook lopen de studenten stage, in het tweede en afstudeerjaar.</p>
+			<p>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam.</p>
+			<p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen. Wij nemen zo nodig contact met u op nadat het formulier is verstuurd. Voor vragen of opmerkingen kunt u <a href="">contact</a> met ons opnemen.</p>
+		</article>
+		<form>
+			<fieldset>
+				<legend>Contactgegevens</legend>
+				<label for="naam">Naam*</label>
+				<input id="naam" type="text" required>
+				<label for="bedrijf">Bedrijf</label>
+				<input id="bedrijf" type="text">
+				<label for="adres">Adres*</label>
+				<input id="adres" type="text" required>
+				<label for="huisnummer">Huisnummer*</label>
+				<input id="huisnummer" type="number" required>
+				<label for="huisnummer">Huisnummer toevoeging</label>			
+				<input id="huisnummer_toevoeging" type="text">
+				<label for="postcode">Postcode*</label>
+				<input id="postcode" type="text" placeholder="1111AA" pattern="[1-9][[0-9]{3}\s?[a-zA-Z]{2}" required>
+				<label for="plaats">Plaats*</label>
+				<input id="plaats" type="text" required>
+				<label for="telefoonnummer">Telefoonnummer*</label>
+				<input id="telefoonnummer" type="tel" required>
+				<label for="email">E-mail</label>
+				<input id="email" type="email" placeholder="voorbeeld@voorbeeld.com" required>	
+			</fieldset>
+			<fieldset>
+				<legend>Ik wil mij aanmelden</legend>
+				<input type="radio" name="project" value="project">Voor een project
+				<input type="radio" name="stagebedrijf" value="stagebedrijf">Als stagebedrijf
+			</fieldset>
+			<fieldset>
+				<legend>Project</legend>
+				<ol>
+					<li>
+						<label for="titel_project">Titel</label>
+						<input id="titel_project" type="text">
+					</li>
+					<li>
+						<label for="opdrachtomschrijving_project">Opdrachtomschrijving</label>
+						<textarea id="opdrachtomschrijving_project" name="opdrachtomschrijving"></textarea>					
+					</li>
+					<li>
+						<label for="doelgroepomschrijving_project">Doelgroepomschrijving</label>
+						<textarea id="doelgroepomschrijving_project" name="doelgroepomschrijving"></textarea>							
+					</li>
+					<li>
+						<label for="doelstelling">Doelstelling/intentie van het project</label>
+						<textarea id="doelstelling" name="doelstelling"></textarea>					
+					</li>
+					<li>
+						<label for="looptijd_project">Looptijd</label>
+						<input id="looptijd_project" type="number"> dagen						
+					</li>
+					<li>
+						<label for="deadline">Deadline</label>
+						<input id="deadline" type="date">						
+					</li>
+				</ol>
+				<label>Geschikt voor</label>
+				<ol>
+					<li>
+						<input type="radio" name="eerstejaarsproject" value="eerstejaarsproject"> eerstejaars studenten
+					</li>
+					<li>
+						<input type="radio" name="tweedejaarsproject" value="tweedejaarsproject"> tweedejaars studenten
+					</li>
+					<li>
+						<input type="radio" name="derdejaarsproject" value="derdejaarsproject"> derdejaars studenten
+					</li>
+					<li>
+						<input type="radio" name="afstudeerproject" value="afstudeerproject"> afstudeer studenten
+					</li>
+					<li>
+						<input type="radio" name="onbekendproject" value="onbekendproject"> onbekend
+					</li>
+				</ol>
+				<label for="opmerking_project">Opmerking</label>
+				<textarea id="opmerking_project" name="opmerking_project"></textarea>
+			</fieldset>
+			<fieldset>
+				<legend>Stage</legend>
+				<label>Geschikt voor</label>
+				<ol>
+					<li>
+						<input type="radio" name="tweedejaarsstage" value="tweedejaarsstage"> tweedejaars studenten
+					</li>
+					<li>
+						<input type="radio" name="afstudeerstage" value="afstudeerstage"> afstudeer studenten
+					</li>
+					<li>
+						<input type="radio" name="onbekendstage" value="onbekendstage"> onbekend
+					</li>
+				</ol>	
+				<ol>
+					<li>
+						<label>Hoe lang is de stage?</label>
+						<input type="radio" name="tien" value="tien"> - 10 weken
+						<input type="radio" name="twintig" value="twintig"> - 20 weken
+					</li>
+					<li>
+						<label for="begindatum_stage">Begin datum</label>
+						<input id="begindatum_stage" type="date">
+					</li>
+				</ol>
+				<label for="beschrijving_werkzaamheden_stage">Beschrijving werkzaamheden</label>
+				<textarea id="beschrijving_werkzaamheden_stage" name="beschrijving_werkzaamheden_stage"></textarea>
+				<label>Beschrijving stagebedrijf</label>
+				<ol>
+					<li>
+						<label for="bedrijfsnaam">Bedrijfsnaam*</label>
+						<input id="bedrijfsnaam" type="text" required>
+					</li>
+					<li>
+						<label for="adres_stagebedrijf">Adres*</label>
+						<input id="adres_stagebedrijf" type="text" required>						
+					</li>
+					<li>
+						<label for="postcode_stagebedrijf">Naam*</label>
+						<input id="postcode_stagebedrijf" type="text" placeholder="1111AA" pattern="[1-9][[0-9]{3}\s?[a-zA-Z]{2}" required>
+					</li>
+					<li>
+						<label for="plaats_stagebedrijf">Plaats*</label>
+						<input id="plaats_stagebedrijf" type="text" required>
+					</li>
+					<li>
+						<label for="sector_stagebedrijf">Sector</label>
+						<input id="sector_stagebedrijf" type="text">
+					</li>
+					<li>
+						<label for="core_business_stagebedrijf">Core business</label>
+						<input id="core_business_stagebedrijf" type="text">						
+					</li>															
+				</ol>
+				<label for="opmerking_stage">Opmerking</label>
+				<textarea id="opmerking_stage" name="opmerking_project"></textarea>
+			</fieldset>
+			<input type="submit">
+		</form>			
+	</main>
+
+	<footer>
+		<p>Copyright</p>
+	</footer>
+</body>
+</html>
+
+
