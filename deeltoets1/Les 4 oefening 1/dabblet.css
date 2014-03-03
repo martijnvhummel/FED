@@ -1,0 +1,55 @@
+/**
+ * Child selectors en sibling combinators oefening
+ Opdracht:
+ Vervang alle … door de juiste selector of combinatie.
+ De omschrijving staat er telkens boven
+ */
+
+body {
+	background: #fff;
+	font: 100%/1.5 georgia;
+	max-width: 40em;
+	margin: 0 auto;
+	color: #333;
+}
+h1, p {
+	margin: 1em 0;
+}
+
+/* Dit blok geldt voor alle h1's, ongeacht het niveau */
+h1 {
+	font-weight: normal;
+	font-size: 150%;
+	text-shadow: 0 0 .1em #333;
+}
+/* Dit blok geld alleen voor een h1 die een direct-child is van
+een section, die weer een direct-child is van een article */
+article > section > h1 {
+	font-size: 135%;
+	text-shadow: 0 0 .1em blue;
+}
+
+/* Dit blok geldt alleen voor een h1 die een direct-child is van 
+een section, die weer een direct-child is van een section */
+section > section> h1 {
+	font-size: 120%;
+	text-shadow: 0 0 .1em red;
+}
+
+/* Dit blok geld alleen voor elke paragraaf die direct
+na een h1 staat */
+h1 + p {
+	margin: -1em 0 1em;
+}
+/* Dit blok geld alleen voor elke paragraaf die direct
+na een andere paragraaf staat */
+p + p {
+	margin: -1em 0 1em;
+	text-indent: 1.5em;
+}
+
+/* Dit blok geldt alleen voor alle paragrafen in 
+de allerlaatste section van het artikel */
+article > section:last-of-type > p {
+	font-style: italic;
+}
