@@ -1,0 +1,96 @@
+/**
+ * Attribute selectors and bling oefening
+	Opdracht:
+	Vervang alle … door de juiste selector of combinatie.
+	De omschrijving staat er telkens boven
+ */
+
+
+/* Dit blok geldt voor alle input-elementen */
+input {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 1.2em;
+	border-radius: .3em;
+	box-shadow: inset .1em .1em .2em rgba(0,0,0,.5);
+	appearance: none;
+	border: none;
+	transition: .5s;
+	margin: .3em 0;
+	padding: .2em;
+}
+/* Dit blok geldt voor elke li in een ol */
+ol > li {
+	background: rgba(0,0,0,.1);
+	padding: .5em;
+	margin: 0;
+}
+/* Dit blok geldt voor elke *tweede* li in een ol */
+ol > li:nth-of-type(2n) {
+	background: none;
+}
+
+/* Dit blok zorgt er voor dat er een rood sterretje komt te staan
+achter de elementen die hieraan voldoen:
+Een element met het attribuut for="naam"
+Een element met het attribuut for="email"
+ */
+[for="naam"]::after, [for="email"]::after {
+	content: " *";
+	color: red;
+}
+
+
+/* Dit blok geldt voor een input waarover gehoverd wordt */
+input:hover {
+	padding: .4em .2em;
+}
+
+/* Dit blok geldt voor een input die focus heeft */
+input:focus {
+	box-shadow: inset .1em .1em .1em rgba(0,0,0,.0),
+				0 0 0 2px hsla(60,100%,50%,.6),
+				0 0 0 4px hsla(120,100%,50%,.6),
+				0 0 0 6px hsla(180,100%,50%,.6),
+				0 0 0 8px hsla(240,100%,50%,.6),
+				0 0 0 10px hsla(300,100%,50%,.6),
+				0 0 0 12px hsla(0,100%,50%,.6);
+	padding: .4em .2em;
+
+}
+
+/* Klaar! */
+
+
+body {
+	background: #fff;
+	font: 100%/1.5 georgia;
+	max-width: 20em;
+	margin: 0 auto;
+	color: #333;
+}
+
+form {
+	margin: 3em 0;
+}
+
+fieldset {
+	border: 0;
+	border-radius: 1em;
+	box-shadow: 0 0 1em currentColor;
+	padding: 1em;
+}
+fieldset + fieldset {
+	margin: 2em 0 0;
+}
+
+legend {
+	padding: 0;
+	font-size: 1.2em;
+	position: absolute;
+}
+legend + ol {
+	padding: 2em 0 0;
+	list-style: none;
+}
