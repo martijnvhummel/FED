@@ -1,0 +1,262 @@
+/*Styling aanmeldpagina*/
+
+
+main > header {
+	width: 100%;	
+	height: 400px;
+	background-size: 100%;	
+	background-image: url(../media/aanmelden_achtergrond.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-attachment: fixed;
+}
+
+main > header > h1 {
+	text-align: center;
+	padding-top: 100px;
+	color: rgb(241, 103, 35);
+}
+
+
+
+
+/*Opmaak article 1*/
+
+main > article:nth-of-type(1), main > header > h1 {
+	width: 50%;
+	margin: 0px auto;
+}
+
+main article:nth-of-type(1) > p:nth-of-type(-n+2) {
+	margin-bottom: 20px;
+}
+
+/*Dit spreekt het eerste artikel binnen de main aan*/
+main article:nth-of-type(1) {
+}
+
+
+main > article:nth-of-type(1) {
+	width: 100%;
+	padding-top: 150px;
+	padding-bottom: 150px;
+	background-color: rgb(241, 103, 35);	
+	text-align: justify;
+}
+
+/*Dit spreekt de 1e, 2e en 3e paragraaf uit het eerste article in de main aan*/
+main > article:nth-of-type(1) > p:nth-of-type(-n+3) {
+	width: 50%;
+	margin-left: 7.5%;
+}
+
+main > div:nth-of-type(1) {
+	width: 100%;
+	height: 250px;
+	background-size: cover;	
+	background-image: url(../media/aanmelden_achtergrond.png);
+	background-repeat: no-repeat;
+	background-position: right;	
+	background-attachment: fixed;	
+}
+
+/* Einde opmaak article 1*/
+
+
+
+
+
+/*Formulier opmaak*/
+
+form {
+	width: 100%;
+	text-align: center;
+	background-color: rgb(241, 103, 35);
+	padding-top: 50px;
+}
+
+form fieldset {
+	text-align: left;
+	padding: 1%;
+}
+
+/*Dit spreekt de laatste twee fieldset elementen aan binnen een form*/
+form > fieldset:nth-last-of-type(-n+2) {
+	display: inline-block;
+	width: 30%;
+	vertical-align: top;
+	padding-top: 40px;
+	padding-left: 40px;
+	padding-right: 20px;
+}
+
+
+form fieldset:nth-last-of-type(-n+2) {
+	margin-top: 20px;
+}
+
+
+ol li {
+	background: rgba(0,0,0,.1);
+	padding: .5em;
+	margin: 0;
+}
+
+form fieldset:nth-of-type(3) ol li:nth-child(even) {
+	background: none;
+}
+
+
+form fieldset:nth-of-type(4) ol:nth-of-type(1) li:nth-child(even), form fieldset:nth-child(4) ol:nth-of-type(2) li:nth-child(odd), form fieldset:nth-child(4) ol:nth-of-type(3) li:nth-child(even) {
+	background: none;
+}
+
+form fieldset:nth-last-of-type(-n+2) ol:nth-of-type(-n+5), form fieldset:nth-last-of-type(1) textarea:nth-last-of-type(2) {
+	margin-bottom: 50px;
+}
+
+form fieldset:nth-last-of-type(1) {
+	margin-bottom: 5%;
+}
+
+/*Einde formulier opmaak*/
+
+
+
+
+/*Input opmaak*/
+
+input:not([type=radio]) {
+	display: block;
+	width: 50%;
+	box-sizing: border-box;
+	font-size: 1.2em;
+	border-radius: .3em;
+	box-shadow: inset .1em .1em .2em rgba(0,0,0,.5);
+	appearance: none;
+	border: none;
+	margin: .3em 0;
+	padding: .2em;	
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+/*Hier selecteer ik input velden van de eerste fieldset, wanneer de focus hier op ligt*/
+form fieldset:nth-of-type(1) input:focus {
+	width: 50%;
+	background-color: rgb(212, 236, 255);	
+}
+
+/*Dit spreekt de input velden en labels in het eerste fieldset element van een formulier aan.*/
+form fieldset:nth-of-type(1) input {
+	width: 40%;
+}
+
+form > fieldset > div {
+	width: 50%;
+	float: left;
+}
+
+input[type="submit"] {
+	padding: 1em;
+	margin: 0px auto;
+	margin-top: 30px;
+	display: block;
+	width: 10%;
+	font-size: 1.2em;
+	border-radius: .3em;
+	box-shadow: .1em .1em .2em rgba(0,0,0,.5);
+    -webkit-transition: -webkit-transform 0.8s;
+    -moz-transition: -moz-transform 0.8s;
+    -o-transition: -o-transform 0.8s;
+    transition: transform 0.8s ease;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+}
+
+input[type="submit"]:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(e60deg);
+    width: 20%;
+    padding: 3em;
+/*	background-color: rgb(212, 236, 255);*/
+	font-weight: bold;
+	background-color: rgb(112, 128, 144);
+	color: rgb(241, 103, 35);
+	box-shadow:0 20px 20px -5px black;
+	font-size: 40px;
+	border-radius: 960px 960px 0;
+	border: 0 solid rgba(0,0,0,.3);
+	border-width: 0 20px 20px 0;
+	border-right-color: rgba(0,0,0,.6);
+}
+
+
+/*Dit spreekt de eerste twee fieldset elementen aan binnen een formulier*/
+form fieldset:nth-of-type(-n+2) {
+	display: inline-block;
+	width: 67%;
+	margin: 0px auto;
+}
+
+form fieldset:nth-of-type(2) {
+	margin-top: 100px;
+}
+
+/*Dit spreekt het 1-na-laatste fieldset element aan*/
+form fieldset:nth-last-of-type(-n+1) {
+	margin-left: 2.3%;
+}
+
+form fieldset textarea {
+	display: block;
+	width: 50%;
+	box-sizing: border-box;
+	font-size: 1.2em;
+	border-radius: .3em;
+	box-shadow: inset .1em .1em .2em rgba(0,0,0,.5);
+	appearance: none;
+	border: none;
+	margin: .3em 0;
+	padding: .2em;	
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;	
+}
+
+form fieldset textarea:focus {
+	padding-bottom: 3em;
+}
+
+/*Hier selecteer ik input velden van de laatste 2 fieldsets en alle textarea's die in een fieldset in een form zitten, wanneer de focus hier op ligt*/
+/*Dit zorgt ervoor dat het veld waar de focus op ligt opvalt.*/
+form fieldset:nth-last-of-type(-n+2) input:not([type=radio]):focus, form fieldset textarea:focus {
+/*	border: 2px solid green;*/
+	border: 2px rgb(21, 149, 255);
+	width: 70%;
+	background-color: rgb(212, 236, 255);
+}
+
+/*Hier selecteer ik alle input velden waar het type "radio" is opgegeven (alle radio buttons)*/
+input[type="radio"] {
+	background-color: green;
+}
+
+/*Hier plaats ik een sterretje (*) achter elk verplicht input item*/
+[for="naam"]::after, [for="adres"]::after, [for="huisnummer"]::after, [for="postcode"]::after, [for="plaats"]::after, [for="telefoonnummer"]::after, [for="email"]::after, [for="bedrijfsnaam"]::after, [for="adres_stagebedrijf"]::after, [for="postcode_stagebedrijf"]::after, [for="plaats_stagebedrijf"]::after {
+	content: " *";
+	color: red;
+}
+
+footer:nth-last-of-type(1) {
+	text-align: center;
+	background-color: rgb(241, 103, 35);
+	padding-top: 5%;
+}
