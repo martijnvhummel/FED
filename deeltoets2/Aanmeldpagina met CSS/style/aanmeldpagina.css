@@ -182,7 +182,7 @@ input[type="submit"]:hover {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -o-transform: rotate(360deg);
-    transform: rotate(e60deg);
+    transform: rotate(360deg);
     width: 20%;
     padding: 3em;
 /*	background-color: rgb(212, 236, 255);*/
