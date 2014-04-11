@@ -1,0 +1,101 @@
+/**
+ * Responsive blog layout te doen
+ */
+
+article {
+	display: inline-block;
+	vertical-align: top;
+}
+nav li {
+	display: block;
+}
+
+
+/* vanaf 460px breedte moet elk artikel 49% breed zijn
+   Het eerste artikel moet 100% breed blijven
+   De font-grootte van het eerste artikel moet 1.1 keer zo groot zijn
+ */
+
+@media screen and (min-width: 28.75em) {
+	article {
+		width: 49%;
+	}
+	article:nth-of-type(1) {
+		width: 100%;
+		font-size: 1.1em;
+	}
+}
+
+
+/* vanaf 750px breedte moet elk artikel 32% breed zijn
+   De eerste twee artikelen moeten 49% breed zijn
+   De font-grootte van de eerste twee artikelen moet 1.1 keer zo groot zijn
+   De navigatie moet bovenaan de pagina ónder de H1 komen te staan
+   De navigatie-items moeten naast elkaar staan
+   De font-grootte van de navigatie-items is 1.3 keer zo groot als normaal
+   Alle positionering moet met ems gebeuren.
+ */
+ 
+ @media screen and (min-width: 46.88em) {
+	article {
+		width: 32%;
+	}
+	article:nth-of-type(-n+2) {
+		width: 49%;
+		font-size: 1.1em;
+	}
+	
+	nav {
+		position: absolute;
+		top: 2.5em;;	
+		font-size: 1.3em;
+	}
+	
+	nav ul li {
+		display: inline-block;
+	}
+}
+
+
+/* vanaf 1000px breedte moet elk artikel 24% breed zijn
+   De eerste drie artikelen moeten 32% breed zijn
+   De font-grootte van de eerste drie artikelen moet 1.1 keer zo groot zijn
+ */
+
+ @media screen and (min-width: 62.5em) {
+	article {
+		width: 24%;
+	}
+	
+	article:nth-of-type(-n+3) {
+		width: 32%;
+		font-size: 1.1em;
+	}
+}
+
+
+
+body {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 1em;
+}
+
+nav ul,
+nav li {
+	margin: 0;
+	padding: 0;
+	list-style:none;
+}
+nav li {
+	border: solid #333;
+	border-width: 0 0 1px;
+}
+nav a {
+	display: block;
+	line-height: 1.8;
+	padding: .2em;
+}
+* {
+	box-sizing: border-box;
+}

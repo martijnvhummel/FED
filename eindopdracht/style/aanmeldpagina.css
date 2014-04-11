@@ -1,0 +1,841 @@
+/*Styling aanmeldpagina*/
+body {
+	background-size: cover;		
+	background-image: url(../media/opleiding_achtergrond.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-attachment: fixed;	
+}
+
+main > header {
+	width: 100%;	
+	height: 31.25em;
+}
+
+main > header > h1 {
+	text-align: center;
+	padding-top: .5em;
+	color: rgb(241, 103, 35);
+}
+
+input, textarea {
+	font-family: Georgia, serif;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;	
+}
+
+
+/*Opmaak article 1*/
+
+main > article:nth-of-type(1) {
+	width: 50%;
+	margin: 0px auto;
+}
+
+
+
+
+/*Opmaak artikel 1*/
+
+main > article:nth-of-type(1) {
+	width: 100%;	
+	padding-top: 0px;
+	background-color: rgb(241, 103, 35);	
+	text-align: justify;
+}
+
+/*Einde opmaak artikel1*/
+
+
+
+
+/*Formulier opmaak*/
+
+form {
+	width: 100%;
+	text-align: center;
+	background-color: rgb(241, 103, 35);
+}
+
+/*Input opmaak*/
+
+input:not([type="radio"]) {
+	display: block;
+	font-size: 1.2em;
+	border-radius: .3em;
+	box-shadow: inset .1em .1em .2em rgba(0,0,0,.5);
+    -webkit-transition: all 0.5s ease;a
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+	padding: .2em;	    
+}
+
+/*Hier selecteer ik input velden van de eerste fieldset, wanneer de focus hier op ligt*/
+
+.boxshadow fieldset {
+	border: 2px ridge white;
+
+/*	box-shadow: inset .2em .2em .5em black; */
+}
+
+.no-boxshadow fieldset {
+	border: 2px solid white;
+	box-shadow: none;
+}
+
+.no-boxshadow fieldset textarea {
+	border: 1px solid black;
+}
+
+form fieldset textarea {
+	display: block;
+	font-size: 1.2em;	
+	border-radius: .5em;
+	box-shadow: inset .1em .1em .2em rgba(0,0,0,.5);	
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;		
+	padding: .2em;	    
+	padding-bottom: 1em;
+}
+
+
+input[type="submit"]:nth-of-type(1) {
+    -webkit-transition: -webkit-transform 0.8s;
+    -moz-transition: -moz-transform 0.8s;
+    -o-transition: -o-transform 0.8s;
+    transition: transform 0.8s ease;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+}
+
+form fieldset label {
+	font-weight: bold;
+}
+
+/*Einde formulier opmaak*/
+
+@media screen and (min-width: 1em) and (max-width: 62.49em) {
+
+/*	nav {
+		display: none;
+	}*/
+
+	main > header {
+		width: 100%;	
+		height: 31.25em;
+		animation: headergrootte_een 3s .5s forwards;
+		-webkit-animation: headergrootte_een 3s .5s forwards;	
+	}
+
+	main > article:nth-of-type(1) {
+		margin-bottom: 7em;
+	}
+
+	main > article:nth-of-type(1) p {
+		width: 90%;
+		margin: 0px auto;
+	}
+
+	main > article:nth-of-type(1) > p:nth-of-type(1) {
+		padding-top: 2em;
+	}
+
+	main > article:nth-of-type(1) > p:nth-of-type(-n+2) {
+		margin-bottom: 1em;
+	}
+
+	main > article:nth-of-type(1) > p:nth-last-of-type(1) {
+		padding-bottom: 1em;
+	}
+
+	h1 {
+		font-size: 1.4em;
+		font-weight: bold;
+	}
+
+	h2 {
+		font-size: 1.2em;
+		font-weight: bold;
+	}
+
+	h3 {
+		font-size: 1em;
+		font-weight: bold;
+	}
+
+
+
+/*	Formulier opmaak*/
+
+	form {
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+
+	form fieldset {
+		text-align: center;
+		padding: 1%;
+	}
+
+	input:not([type="radio"]) {
+		width: 80%;
+		box-sizing: border-box;
+		font-size: 1em;
+		padding: .3em;
+		margin: 0px auto;
+		border: none;
+	}		
+
+	form fieldset textarea {
+		width: 80%;
+		font-size: 1em;
+		margin: 0px auto;
+	}
+
+	form fieldset input[type="number"] {
+		width: 30%;
+	}
+
+	form {
+		width: 100%;
+	}
+
+	form fieldset {
+		width: 95%;
+		margin: 0px auto;
+	}
+
+	form ol li {
+		list-style-type: none;
+	}
+
+/*	Fieldset 1*/
+	form fieldset:nth-of-type(1) input:nth-of-type(-n+8) {
+		margin-bottom: .5em;
+	}
+
+	form fieldset:nth-of-type(1) {
+		padding: 1em 0 1em 0;
+		margin-bottom: 2em;
+	}
+
+	form fieldset input[placeholder] {
+/*		text-align: center;*/
+	}
+
+
+
+/*	Fieldset 2*/
+	form fieldset:nth-of-type(2) input {
+		width: 100%;
+		text-align: center;
+	}
+
+	form fieldset:nth-of-type(2) {
+		padding: 1em 0 1em 0;
+		margin-bottom: 2em;				
+	}
+
+/*	Fieldset3*/
+	form fieldset:nth-of-type(3) {
+		padding: 1em 0 1em 0;
+		margin-bottom: 2em;			
+	}
+
+	form fieldset:nth-of-type(3) input:nth-of-type(-n+5) {
+		margin-bottom: .5em;
+	}
+
+	form fieldset:nth-of-type(3) label {
+		display: block;
+		margin-top: .5em;
+	}
+
+	form fieldset:nth-of-type(3) ol:nth-of-type(2) {
+		text-align: left;
+		width: 80%;
+		margin: 0px auto;
+	}
+
+	form fieldset:nth-of-type(3) div:nth-of-type(2) ol {
+		width: 80%;
+		margin: 0px auto;
+		text-align: left;
+	}
+
+/*	Fieldset 4*/
+
+	form fieldset:nth-of-type(4) {
+		padding: 1em 0 1em 0;
+		margin-bottom: 2em;			
+	}
+
+	form fieldset:nth-of-type(4) ol:nth-of-type(2) {
+		margin-bottom: 1em;
+	}
+
+	form fieldset:nth-of-type(4) {
+		width: 95%;
+	}
+
+	form fieldset:nth-of-type(4) input:nth-last-of-type(-n+6) {
+		margin-bottom: .5em;
+
+	}
+
+	form fieldset:nth-of-type(4) div:nth-of-type(1) ol:nth-of-type(1) {
+		width: 80%;
+		margin: 0px auto;
+		text-align: left;
+	}
+
+	form fieldset:nth-of-type(4) div:nth-of-type(2) ol li input {
+		width: 80%;
+		text-align: left;
+	} 
+
+/*	form fieldset:nth-of-type(4) div:nth-of-type(2) ol li input-placeholder {
+		text-align: center;
+	} */
+
+	form fieldset:nth-of-type(4) ol:nth-of-type(2) li:nth-of-type(1) label {
+		display: block;
+	}
+
+	form fieldset:nth-of-type(4) ol:nth-of-type(1) {
+/*		text-align: left;*/
+		width: 100%;
+		margin: 0px auto;
+	}
+
+	form fieldset:nth-of-type(4) ol:nth-of-type(2) li:nth-of-type(1) {
+		width: 80%;
+		margin: 0px auto;
+	}
+
+/*	Begin datum width*/
+	form fieldset:nth-of-type(4) ol:nth-of-type(2) li:nth-of-type(2) input {
+		width: 80%;
+		margin: 0px auto;
+	}	
+
+	form fieldset:nth-of-type(4) ol:nth-of-type(2) li input {
+		width: 100%;
+	}
+
+	form fieldset:nth-of-type(4) ol:nth-of-type(2) li:nth-of-type(1) label:nth-of-type(1) {
+		margin-top: .5em;	
+	}
+
+	form fieldset:nth-of-type(4) ol:nth-of-type(2) li:nth-of-type(1) {
+		margin-bottom: .5em;
+	}
+
+	form fieldset:nth-of-type(4) label[for="beschrijving_werkzaamheden_stage"] + textarea {
+		margin: 0px auto;
+		margin-bottom: 1em;
+		display: block;
+	}
+
+	form fieldset:nth-of-type(4) textarea:nth-last-of-type(1) {
+		display: block;
+		margin: 0px auto;	
+	}
+
+
+/*	Einde formulier opmaak*/
+
+	footer {
+		margin-top: 7em;
+	}
+
+}
+
+
+
+
+@media screen and (min-width: 28.75em) and (max-width: 62.49em) { 
+
+	main > header {
+		width: 100%;	
+		height: 50em;
+		animation: headergrootte_twee 3s 1s forwards;
+		-webkit-animation: headergrootte_twee 3s 1s forwards;	
+	}
+
+	main > article {
+		margin-bottom: 10em;
+	}
+
+
+/*Opmaak artikel 1*/
+
+	main > article:nth-of-type(1) p {
+		width: 80%;
+	}
+
+/*Einde opmaak artikel 1*/
+
+
+
+
+
+
+
+/*Formulier opmaak*/
+
+	form fieldset {
+		text-align: center;
+		padding: 1%;
+	}
+
+	input:not([type="radio"]) {
+		width: 50%;
+		box-sizing: border-box;
+		font-size: 1.2em;
+		margin: 0px auto;
+		border: none;
+	}		
+
+	input:not([type="radio"]):focus {
+		width: 60%;
+		background-color: rgb(212, 236, 255);	
+	}	
+
+	form fieldset textarea {
+		width: 50%;
+		margin: 0px auto;
+	}
+
+	form fieldset textarea:focus {
+		width: 60%;
+		margin: 0px auto;
+		background-color: rgb(212, 236, 255);	
+		padding-bottom: 3em;
+	}
+
+	form fieldset input[type="number"] {
+		width: 20%;
+	}
+
+	form fieldset input[type="number"]:focus {
+		width: 30%;
+		background-color: rgb(212, 236, 255);
+	}	
+
+	form fieldset:nth-of-type(3) div:nth-of-type(2) ol {
+		width: 50%;
+	}
+
+	form fieldset:nth-of-type(4) div:nth-of-type(1) ol:nth-of-type(1) {
+		width: 50%;
+	}
+
+/*	Begin datum*/
+	form fieldset:nth-of-type(4) ol:nth-of-type(2) li:nth-of-type(2) input {
+		width: 50%;
+		margin: 0px auto;
+	}
+
+	form fieldset:nth-of-type(4) ol:nth-of-type(2) li:nth-of-type(2) input:focus {
+		width: 60%;
+	}
+
+	form {
+		width: 100%;
+	}
+
+	form fieldset {
+		width: 95%;
+		margin: 0px auto;
+	}
+
+	form fieldset:nth-of-type(4) div:nth-of-type(2) ol li input {
+		width: 50%;
+		text-align: left;
+	} 	
+
+	form fieldset:nth-of-type(4) div:nth-of-type(2) ol li input:focus {
+		width: 60%;
+		text-align: left;
+	} 	
+
+/*Einde formulier opmaak*/
+
+}
+
+
+/*1000px*/
+@media screen and (min-width: 62.5em) { 
+
+
+	main > header {
+		width: 100%;	
+		height: 50em;
+		animation: headergrootte 3s 1s forwards;
+		-webkit-animation: headergrootte 3s 1s forwards;	
+	}
+
+	main > header > h1 {
+		padding-top: 2.5em;
+		font-size: 1.6em;
+	}
+
+	main > article > header h2 {
+		font-size: 1.3em
+	}
+
+	main > article > header h3 {
+		font-size: 1.1em;
+	}	
+
+	/*Artikel 1 opmaak*/
+	/*Dit spreekt het eerste artikel binnen de main aan*/
+	main > article:nth-of-type(1) {
+		width: 100%;
+		padding-top: 7.5em;
+		padding-bottom: 7.5em;
+		text-align: justify;
+	}
+
+	/*Dit spreekt de 1e, 2e en 3e paragraaf uit het eerste article in de main aan*/
+	main > article:nth-of-type(1) > p:nth-of-type(-n+3) {
+		width: 50%;
+		margin-left: 7.5%;
+	}
+
+	main > div:nth-of-type(1) {
+		width: 100%;
+		height: 15.63em;
+		background-size: cover;	
+		background-image: url(../media/aanmelden_achtergrond.png);
+		background-repeat: no-repeat;
+		background-position: right;	
+		background-attachment: fixed;	
+	}
+
+	/* Einde opmaak article 1*/
+
+
+
+
+	/*Formulier opmaak*/
+
+	form {
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
+
+	form fieldset {
+		text-align: left;
+		padding: 1%;
+	}
+
+	/*Dit spreekt de input velden en labels in het eerste fieldset element van een formulier aan.*/
+	form fieldset:nth-of-type(1) input {
+		width: 50%;
+	}
+
+	form fieldset:nth-of-type(1) input:focus {
+		width: 60%;
+		background-color: rgb(212, 236, 255);	
+	}
+
+	::-webkit-input-placeholder { 
+		font-size: .8em;
+		line-height: 1.5em;		
+	}
+	::-moz-placeholder { 
+		font-size: .8em;
+		line-height: 1.5em;		
+	} /* firefox 19+ */
+	:-ms-input-placeholder { 
+		font-size: .8em;
+		line-height: 1.5em;		
+	} /* ie */
+	input:-moz-placeholder { 
+		font-size: .8em;
+		line-height: 1.5em;
+	}
+
+	form fieldset:nth-of-type(1) input {
+		font-size: 1em;
+		padding: .3em .3em .3em .3em;
+	}
+
+
+	form > fieldset > div {
+		width: 50%;
+		float: left;
+	}
+
+
+	/*Dit spreekt de laatste twee fieldset elementen aan binnen een form*/
+	form > fieldset:nth-last-of-type(-n+2) {
+		display: inline-block;
+		width: 67%;
+		margin: 0px auto;
+	}
+
+	form > fieldset:nth-last-of-type(-n+2) > div {
+		width: 45%;
+		display: inline-block;
+		padding: 1%;
+	}
+
+	form > fieldset:nth-last-of-type(-n+2) ol {
+		margin-left: 2em;
+	}
+
+	form > fieldset:nth-last-of-type(-n+2) div > label {
+		margin-left: 2em;
+	}
+
+	form > fieldset:nth-last-of-type(-n+2) div > textarea{
+		margin-left: 2em;
+	} 
+
+	form fieldset:nth-last-of-type(-n+2) {
+		margin-top: 20px;
+	}
+
+	ol li {
+		background: rgba(0,0,0,.1);
+		padding: .5em;
+		margin: 0;
+	}
+
+	form fieldset:nth-of-type(2) > input {
+		margin-right: 1em		
+	}
+
+	form fieldset:nth-of-type(2) > input:nth-of-type(2) {
+		margin-left: 3em;
+	}
+
+	form fieldset:nth-of-type(3) ol li:nth-child(even) {
+		background: none;
+	}
+
+	form fieldset:nth-of-type(4) ol:nth-of-type(1) li:nth-child(even), form fieldset:nth-child(4) ol:nth-of-type(2) li:nth-child(odd), form fieldset:nth-child(4) ol:nth-of-type(3) li:nth-child(even) {
+		background: none;
+	}
+
+	form fieldset:nth-last-of-type(-n+2) ol:nth-of-type(-n+5), form fieldset:nth-last-of-type(1) textarea:nth-last-of-type(2) {
+		margin-bottom: 3.125em;
+	}
+
+	form fieldset:nth-last-of-type(1) {
+		margin-bottom: 5%;
+	}
+
+	form fieldset:nth-of-type(4) div:nth-of-type(1) ol:nth-of-type(2) li:nth-of-type(1) label {
+		display: block;
+	}
+
+
+	form fieldset:nth-of-type(4) div:nth-of-type(1) ol:nth-of-type(2) li:nth-of-type(1) input:nth-of-type(2) {
+		margin-left: 1em;
+	}
+
+
+
+	/*Dit spreekt de eerste twee fieldset elementen aan binnen een formulier*/
+	form fieldset:nth-of-type(-n+2) {
+		display: inline-block;
+		width: 67%;
+		margin: 0px auto;
+	}
+
+	form fieldset:nth-of-type(2) {
+		margin-top: 6.25em;
+	}
+
+	/*Dit spreekt het 1-na-laatste fieldset element aan*/
+/*	form fieldset:nth-last-of-type(-n+1) {
+		margin-left: 2.3%;
+	}*/
+
+	form fieldset textarea {
+		display: block;
+		width: 50%;
+		box-sizing: border-box;
+		font-size: 1em;
+		appearance: none;
+		border: none;
+		margin: .3em 0;
+		padding: .3em;	
+	}
+
+	form fieldset textarea:focus {
+		padding-bottom: 3em;
+	}
+
+	/*Hier selecteer ik input velden van de laatste 2 fieldsets en alle textarea's die in een fieldset in een form zitten, wanneer de focus hier op ligt*/
+	/*Dit zorgt ervoor dat het veld waar de focus op ligt opvalt.*/
+	form fieldset:nth-last-of-type(-n+2) input:not([type=radio]), form fieldset textarea {
+	/*	border: 2px solid green;*/
+		border: 2px rgb(21, 149, 255);
+		width: 70%;
+		background-color: rgb(212, 236, 255);
+	}
+
+	form fieldset:nth-last-of-type(-n+2) input:not([type=radio]):focus, form fieldset textarea:focus {
+	/*	border: 2px solid green;*/
+		border: 2px rgb(21, 149, 255);
+		width: 80%;
+		background-color: rgb(212, 236, 255);
+	}
+
+	/*Hier selecteer ik alle input velden waar het type "radio" is opgegeven (alle radio buttons)*/
+	input[type="radio"] {
+		background-color: green;
+	}
+
+	/*Hier plaats ik een sterretje (*) achter elk verplicht input item*/
+	[for="naam"]::after, [for="adres"]::after, [for="huisnummer"]::after, [for="postcode"]::after, [for="plaats"]::after, [for="telefoonnummer"]::after, [for="email"]::after, [for="bedrijfsnaam"]::after, [for="adres_stagebedrijf"]::after, [for="postcode_stagebedrijf"]::after, [for="plaats_stagebedrijf"]::after {
+		content: " *";
+		color: red;
+	}
+
+	input:not([type=radio]) {
+		width: 50%;
+		box-sizing: border-box;
+		font-size: 1em;
+		padding: .3em;
+		appearance: none;
+		border: none;
+	}	
+
+	input[type="submit"]:nth-of-type(1) {
+		padding: 1em;
+		margin: 0px auto;
+		margin-top: 1.875em;
+		display: block;
+		width: 10%;
+		font-size: 1.2em;
+		border-radius: .3em;
+		box-shadow: .1em .1em .2em rgba(0,0,0,.5);
+	}
+
+/*	input[type="submit"]:nth-of-type(1):hover {
+	    -webkit-transform: rotate(360deg);
+	    -moz-transform: rotate(360deg);
+	    -o-transform: rotate(360deg);
+	    transform: rotate(360deg);
+	    width: 20%;
+	    padding: 3em;
+		font-weight: bold;
+		background-color: rgb(112, 128, 144);
+		color: rgb(241, 103, 35);
+		box-shadow:0 20px 20px -5px black;
+		font-size: 40px;
+		border-radius: 960px 960px 0;
+		border: 0 solid rgba(0,0,0,.3);
+		border-width: 0 20px 20px 0;
+		border-right-color: rgba(0,0,0,.6);
+	}*/
+
+
+
+
+
+/*Einde formulier opmaak*/
+	footer {
+		margin-top: 25em;
+	}
+
+
+
+}
+
+form fieldset:nth-last-of-type(-n+2) {
+	display: none;
+}
+
+footer input:not([type=radio]) {
+	margin-bottom: .5em;				
+}	
+
+
+
+/*Headergrootte mobiel*/
+
+@keyframes headergrootte_een
+{
+
+	0% {
+		height: 31.25em;
+	}
+	100% {
+		height: 7.8em;
+
+	}
+}
+
+@-webkit-keyframes headergrootte_een /* Safari and Chrome */
+{
+	0% {
+		height: 31.25em;
+	}
+	100% {
+		height: 7.8em;
+
+	}
+}
+
+
+/*Headergrootte 28.75em*/
+
+@keyframes headergrootte_twee
+{
+	0% {
+		height: 50em;
+	}
+	100% {
+		height: 10em;
+	}
+}
+
+@-webkit-keyframes headergrootte_twee /* Safari and Chrome */
+{
+	0% {
+		height: 50em;
+	}
+	100% {
+		height: 10em;
+	}
+}
+
+
+
+/*Headergrootte 62.5em*/
+
+@keyframes headergrootte
+{
+
+	0% {
+		height: 50em;
+	}
+	100% {
+		height: 17em;
+	}
+}
+
+@-webkit-keyframes headergrootte /* Safari and Chrome */
+{
+	0% {
+		height: 50em;
+	}
+	100% {
+		height: 17em;
+	}
+}
+
+

@@ -1,0 +1,844 @@
+main > header {
+/*	background-size: cover;	
+	background-image: url(../media/opleiding_achtergrond.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-attachment: fixed;*/
+}
+
+main > header > h1 {
+	text-align: center;
+	padding-top: .5em;
+	color: rgb(241, 103, 35);
+}
+
+body {
+	background-size: cover;		
+/*	background-image: url(../media/opleiding_achtergrond.jpg);*/
+	background-image: url(../media/tth_achtergrond.jpg);	
+	background-repeat: no-repeat;
+	background-position: top;
+	background-attachment: fixed;	
+}
+
+
+
+
+
+/*Opmaak eerste article*/
+
+main > article:nth-of-type(1) {
+	width: 100%;	
+	padding-top: 0px;
+	background-color: rgb(241, 103, 35);	
+	text-align: justify;
+}
+
+/*Einde opmaak eerste article*/
+
+
+
+
+
+/*Opmaak tweede artikel*/
+
+main > article:nth-of-type(2) {
+	width: 100%;	
+	padding-top: 0px;
+	background-color: rgb(241, 103, 35);	
+	text-align: justify;	
+}
+
+/*Einde opmaak tweede artikel*/
+
+
+
+
+
+/*Opmaak derde artikel*/
+
+main > article:nth-of-type(3) {
+	width: 100%;	
+	padding-top: 0px;
+	background-color: rgb(241, 103, 35);	
+	text-align: justify;	
+}
+	
+
+main > article:nth-of-type(3) > img {
+	width: 40%;
+	float: left;
+}
+
+/*Einde opmaak derde artikel*/
+
+
+
+
+
+/*Algemene opmaak Aside*/
+
+aside {
+		background-color: rgb(241, 103, 35);	
+}
+
+
+/*Einde algemene opmaak Aside*/
+
+
+ol li {
+	background: rgba(0,0,0,.1);
+	padding-top: .5em;
+	padding-bottom: .5em;
+	margin: 0;
+}
+
+ol li:nth-of-type(even) { /* of (even) */
+	background: none;
+}
+
+
+
+@media screen and (min-width: 1em) and (max-width: 62.49em) {
+
+	main > header {
+		width: 100%;	
+		height: 31.25em;
+		animation: headergrootte_een 3s .5s forwards;
+		-webkit-animation: headergrootte_een 3s .5s forwards;	
+	}
+
+	main > article:nth-of-type(-n+3) header, h4 {
+		margin-left: 5%;
+		padding-top: 2em;
+		text-align: left;	
+	}
+
+	main > article {
+		margin-bottom: 7em;
+	}
+
+	h1 {
+		font-size: 1.4em;
+		font-weight: bold;
+	}
+
+	h2 {
+		font-size: 1.2em;
+		font-weight: bold;
+	}
+
+	main > article > header h3 {
+		font-size: 1em;
+		font-weight: bold;
+	}
+
+/*	Opmaak artikel 1*/
+
+	main > header > h1 {
+/*		padding-top: 1em;*/
+	}
+
+	main > article:nth-of-type(1) p {
+		width: 90%;
+		margin: 0px auto;
+	}
+
+	main > article:nth-of-type(1) > p:nth-of-type(1), main > article:nth-of-type(1) > article p:nth-of-type(-n+4) {
+		margin-bottom: 1em;
+	}
+
+	main > article:nth-of-type(1) > p:nth-of-type(2) {
+		margin-bottom: 1em;
+	}
+
+	main > article:nth-of-type(1) > article:nth-of-type(1) > p:nth-of-type(5) {
+		padding-bottom: 2em;
+	}
+
+	main > article video {
+		width: 100%;
+	}
+
+/*	Einde opmaak artikel 1*/
+
+
+
+/*Opmaak artikel 2*/
+
+	main > article:nth-of-type(2) p {
+		width: 90%;
+		margin: 0px auto;
+	}
+
+	main > article:nth-of-type(2) p:nth-of-type(2) {
+		padding-bottom: 2em;
+	}	
+
+/*Einde opmaak artikel 2*/
+
+
+
+
+/*Opmaak artikel 3*/
+
+	main > article:nth-of-type(3) p {
+		width: 90%;
+		margin: 0px auto;
+	}
+
+	main > article:nth-of-type(2) p:nth-of-type(2) {
+		padding-bottom: 2em;
+	}
+
+	main > article:nth-of-type(3) > img {
+		width: 90%;
+		margin: 1em 0 1em 5%;	
+	}		
+
+	main > article:nth-of-type(3) > p:nth-last-of-type(-n+2) {
+		margin-top: 1em;
+	}
+
+	main > article:nth-of-type(3) > h4 {
+		margin: 0;
+		text-align: center;
+	}
+
+	main > article:nth-of-type(3) > ol {
+		text-align: center;
+		width: 100%;
+		list-style-type: none;
+		padding-bottom: 2em;
+	}
+
+/*Einde opmaak artikel 3*/
+
+
+/*Opmaak Aside*/
+	aside {
+		width: 100%;
+		margin-bottom: 7em;
+	}
+
+	aside > div > header {
+		padding-top: 2em;		
+	}
+
+	aside > div > header h1 {
+		font-size: 1.5em
+	}
+
+	aside > div > section h2 {
+		font-size: 1.17em;
+	}
+
+	aside > div > section h3 {
+		font-size: 1em;
+	}
+
+	aside > div a {
+		color: black;
+		text-decoration: none;
+	}
+
+	aside > div section {
+		margin-top: 1em;
+	}
+
+	aside > div {
+		margin: 0px auto;		
+	}
+
+	aside > div:nth-of-type(-n+2) {
+		width: 90%;
+	}
+
+	aside > div:nth-of-type(3) {
+		width: 90%;
+		padding-bottom: 2em;
+	}
+
+	.twitter-timeline {
+		width: 100%;
+		max-width: 10em;
+		height: 20em;
+		margin-top: 2em;
+	}
+
+/*Einde opmaak Aside*/
+
+}
+
+
+/* Minimaal 460px*/
+@media screen and (min-width: 28.75em) and (max-width: 62.49em) {
+
+	main > header {
+		width: 100%;	
+		height: 50em;
+		animation: headergrootte_twee 3s 1s forwards;
+		-webkit-animation: headergrootte_twee 3s 1s forwards;	
+	}
+
+	main > article:nth-of-type(-n+3) header, h4 {
+		margin-left: 10%;
+	}	
+
+	main > article {
+		margin-bottom: 10em;
+	}
+
+
+
+
+/*Opmaak artikel 1*/
+
+	main > article:nth-of-type(1) p {
+		width: 80%;
+	}
+
+/*	Einde opmaak artikel 1*/
+
+
+
+
+/*Opmaak artikel 2*/
+
+	main > article:nth-of-type(2) p {
+		width: 80%;
+	}
+
+/*Einde opmaak artikel 2*/
+
+
+
+
+/*Opmaak artikel 3*/
+
+	main > article:nth-of-type(3) p {
+		width: 80%;		
+	}
+
+	main > article:nth-of-type(3) > img {
+		width: 80%;
+		margin: 1em 0 1em 10%;	
+	}	
+
+/*Einde opmaak artikel 3*/
+
+/*Opmaak Aside*/
+
+	aside > div:nth-of-type(-n+2) {
+		width: 80%;
+	}
+
+	aside > div:nth-of-type(3) {
+		width: 80%;
+		text-align: center;
+/*		margin-bottom: 2em;*/
+
+	}
+
+	.twitter-timeline {
+		width: 80%;
+		margin: 0px auto;
+		height: 20em;
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+
+/*Einde opmaak Aside*/
+
+}
+
+
+
+
+
+
+
+
+/*1000px*/
+@media screen and (min-width: 62.5em) {
+
+	main {
+		width: 80%;
+		display: inline-block;
+	}
+
+	main > header > h1 {
+		font-size: 1.6em;
+		width: 14%;
+		float: right;
+		margin-right: 30%;
+	}
+
+	main > article > header h2 {
+		font-size: 1.3em;
+	}
+
+	main > article > header h3 {
+		font-size: 1.1em;
+	}
+
+	aside {
+		width: 18%;
+		display: inline-block;
+		vertical-align: top;
+		padding: 4em 1% 2em 1%;
+	}
+
+	main > header {
+		width: 100%;	
+		height: 50em;
+		animation: headergrootte 3s .5s forwards;
+		-webkit-animation: headergrootte 3s .5s forwards;	
+	}
+
+	aside {
+		margin-bottom: 4em;
+		margin-top: 50em;
+		animation: headergrootte_aside 3s .5s forwards;
+		-webkit-animation: headergrootte_aside 3s .5s forwards;		
+	}
+
+	main > article {
+		margin-bottom: 20em;
+	}	
+
+	/*Dit spreekt de headers aan binnen de eerste twee articles in de main*/
+	main > article:nth-of-type(-n+3) header {
+		margin-left: 7.5%;
+		padding-top: 4em;
+	}
+
+
+
+
+	/*Opmaak eerste article*/
+
+	main > header > h1 {
+		padding-top: 2.5em;
+	}
+
+	/*Dit spreekt de 1e en 2e paragraaf uit het eerste article in de main aan*/
+	main > article:nth-of-type(1) > p:nth-of-type(1), main > article:nth-of-type(1) > p:nth-of-type(2) {
+		float: left;
+		width: 40%;
+		max-width: 50em;			
+		margin-bottom: 4em;
+	}
+
+	/*Dit spreekt de 1e paragraaf uit het eerste article in de main aan*/
+	main > article:nth-of-type(1) > p:nth-of-type(1) {
+		margin-right: 5%; 
+		margin-left: 7.5%;
+	}
+
+	main > article video {
+		width: 100%;
+	}
+
+	/*Dit spreekt de 1e tot 3e paragraaf uit het article binnen het eerste article in de main aan*/
+	main > article:nth-of-type(1) > article > p:nth-of-type(-n+3) {
+		width: 40%;
+		max-width: 50em;
+	}
+
+	/*Dit spreekt de laatste 2 paragrafen uit het article binnen het eerste article in de main aan*/
+	main > article:nth-of-type(1) > article > p:nth-last-of-type(-n+2) {
+		width: 40%;
+		max-width: 50em;		
+	}
+
+	/*Dit spreekt de eerste 2 paragrafen uit het article binnen het eerste article in de main aan*/
+	main > article:nth-of-type(1) > article > p:nth-of-type(-n+2) {
+		display: inline-block;
+		float: left;
+		margin-bottom: 1em;		
+	}
+
+	main > article:nth-of-type(1) > article > p:nth-of-type(4) {
+		margin-bottom: 1em;		
+	}
+
+	/*Dit spreekt de eerste paragraaf uit het article binnen het eerste article in de main aan*/
+	main > article:nth-of-type(1) > article > p:nth-of-type(1) {
+		margin-left: 7.5%;
+		margin-right: 5%;
+	}
+
+	/*Dit spreekt de derde en vierde paragrafen uit het article binnen het eerste article in de main aan*/
+	main > article:nth-of-type(1) > article > p:nth-of-type(3), main > article:nth-of-type(1) > article > p:nth-of-type(4) {
+		display: inline-block;
+		float: left;
+	}
+
+	/*Dit spreekt de derder paragraaf uit het article binnen het eerste article in de main aan*/
+	main > article:nth-of-type(1) > article > p:nth-of-type(3) {
+		margin-left: 7.5%;
+		margin-right: 5%;
+	}
+
+	/*Dit spreekt de vijfde paragraaf uit het article binnen het eerste article in de main aan*/
+	main > article:nth-of-type(1) > article > p:nth-of-type(5) {
+		float: left;
+	}
+
+	main > article:nth-of-type(1) > p:nth-last-of-type(1) {
+		margin-left: 7.5%;
+		font-size: .6em;
+	}
+
+	main > article:nth-of-type(1) > div {
+		clear: both;
+		display: block;
+		margin-bottom: 4em;
+	}
+
+	/*Einde opmaak 1e article*/
+
+
+
+
+
+
+	/*Opmaak tweede article*/
+
+	main > article {
+		margin-bottom: 25em;
+	}
+
+	main > article:nth-of-type(2) {
+		width: 100%;
+		background-color: rgb(241, 103, 35);	
+		text-align: justify;
+	}
+
+	main > article:nth-of-type(2) > p:nth-of-type(2) {
+		padding-bottom: 4em;
+	}
+
+	main > article:nth-of-type(2) > p, main > article:nth-of-type(2) > header {
+		width: 50%;
+		margin-left: 7.5%;
+	}
+
+
+	/* Einde opmaak tweede article*/
+
+
+
+
+
+
+
+	/*Opmaak derde article*/
+
+	main > article:nth-of-type(3) {
+		width: 100%;
+		background-color: rgb(241, 103, 35);	
+		text-align: right;
+		display: inline-block;
+	}
+
+	main > article:nth-of-type(3) > header:nth-of-type(1), main > article:nth-of-type(3) > h4 {
+		text-align: left;
+	}
+
+	main > article:nth-of-type(3) > p {
+		width: 40%;
+		display: inline-block;
+		text-align: justify;
+		margin-right: 7.5%;
+	}
+
+	main > article:nth-of-type(3) > p:nth-last-of-type(-n+2) {
+		margin-top: 1em;
+	}
+
+	main > article:nth-of-type(3) > img {
+		width: 40%;
+		float: left;
+		margin-left: 7.5%;	
+		margin-right: 0;
+	}
+
+	main > article:nth-of-type(3) > div {
+		clear: both;
+		display: block;
+		margin-bottom: 4em;
+	}
+
+	main > article:nth-of-type(3) > h4 {
+		margin-left: 7.5%;
+	}
+
+	article:nth-of-type(3) ol {
+		width: 85%;
+		margin: 0px auto;
+		text-align: center;
+		margin-bottom: 4em;
+	}
+
+	article:nth-of-type(3) ol li {
+		display: inline-block;
+		vertical-align: top;
+		height: 3em;
+		width: 20%;
+	}
+
+	/* Einde opmaak derde article*/
+
+
+/*	Opmaak Aside*/
+
+	aside {
+		margin-bottom: 7em;
+	}
+
+	aside > div > header h1 {
+		font-size: 1.2em;
+	}
+
+	aside > div > section h2 {
+		font-size: 1em;
+	}
+
+	aside > div > section h3 {
+		font-size: .8em;
+	}
+
+	aside > div> section > p {
+		font-size: .8em;
+	}
+
+	aside > div a {
+		color: black;
+		text-decoration: none;
+	}
+
+	aside > div section {
+		margin-top: 1em;
+	}
+
+	aside > div {
+		margin: 0px auto;		
+	}
+
+	aside > div:nth-of-type(2){
+		margin-top: 2em;
+	}
+
+	aside > div:nth-of-type(3) {
+		padding-bottom: 2em;
+	}
+
+	.twitter-timeline {
+		width: 100%;
+		max-width: 10em;
+		height: 30em;
+		margin-top: 2em;
+	}
+
+/*	Einde opmaak Aside*/
+
+
+}
+
+/*Opmaak aside vanaf 62.5 em*/
+@media screen and (max-width: 28.74em) {
+
+	aside > div > section > p {
+		display: none;
+	}
+
+	button {
+		background-color: rgb(255, 255, 255);
+		border-radius: .4em;
+		padding: .3em;
+		margin-top: .3em;	
+		font-family: Georgia;
+	}
+
+}
+
+@media screen and (min-width: 28.75em) {
+
+	aside button {
+		display: none;
+	}	
+}
+/*Einde opmaak aside vanaf 62.5em*/
+
+
+
+
+footer section:nth-of-type(2) > h2 {
+	margin-bottom: .5em;
+}
+
+input[type="text"] {
+	width: 50%;
+	box-sizing: border-box;
+	font-size: 1.2em;
+	appearance: none;
+	border: none;
+	padding: .2em;	
+	border-radius: .3em;
+	box-shadow: inset .1em .1em .2em rgba(0,0,0,.5);
+	margin-bottom: .5em;				
+}	
+
+@media screen and (max-width: 28.74em) {
+	input[type="text"] {
+		width: 100%;			
+	}	
+}
+
+input[type="submit"] {
+	width: 50%;
+		background-color: rgb(255, 255, 255);
+		border-radius: .4em;
+		padding: .3em;
+		margin-top: .3em;				
+}	
+
+@keyframes headergrootte
+{
+
+	0% {
+		height: 50em;
+	}
+	100% {
+		height: 17em;
+	}
+}
+
+@-webkit-keyframes headergrootte /* Safari and Chrome */
+{
+	0% {
+		height: 50em;
+	}
+	100% {
+		height: 17em;
+	}
+}
+
+/*nav {
+	display: none;
+}*/
+
+@keyframes headergrootte_een
+{
+
+	0% {
+		height: 31.25em;
+	}
+	100% {
+		height: 7.8em;
+
+	}
+}
+
+@-webkit-keyframes headergrootte_een /* Safari and Chrome */
+{
+	0% {
+		height: 31.25em;
+	}
+	100% {
+		height: 7.8em;
+
+	}
+}
+
+@keyframes headergrootte_twee
+{
+
+	0% {
+		height: 50em;
+	}
+	100% {
+		height: 10em;
+	}
+}
+
+@-webkit-keyframes headergrootte_twee /* Safari and Chrome */
+{
+	0% {
+		height: 50em;
+	}
+	100% {
+		height: 10em;
+	}
+}
+
+
+
+
+/*Header groottes aside */
+
+@keyframes headergrootte_aside
+{
+	0% {
+		margin-top: 50em;
+	}
+	100% {
+		margin-top: 17em;
+	}
+}
+
+@-webkit-keyframes headergrootte_aside /* Safari and Chrome */
+{
+	0% {
+		margin-top: 50em;
+	}
+	100% {
+		margin-top: 17em;
+	}
+}
+
+@keyframes headergrootte_aside_een
+{
+
+	0% {
+		margin-top: 31.25em;
+	}
+	100% {
+		margin-top: 7.81em;
+
+	}
+}
+
+@-webkit-keyframes headergrootte_aside_een /* Safari and Chrome */
+{
+	0% {
+		margin-top: 31.25em;
+	}
+	100% {
+		margin-top: 7.81em;
+
+	}
+}
+
+@keyframes headergrootte_aside_twee
+{
+
+	0% {
+		margin-top: 50em;
+	}
+	100% {
+		margin-top: 10em;
+	}
+}
+
+@-webkit-keyframes headergrootte_aside_twee /* Safari and Chrome */
+{
+	0% {
+		margin-top: 50em;
+	}
+	100% {
+		margin-top: 10em;
+	}
+}

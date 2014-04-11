@@ -1,0 +1,76 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+header, article, section, aside, footer {
+	display: block;
+}
+
+body {
+	display: box;
+	box-orient: horizontal;
+	text-align: center;
+}
+
+body > header:nth-of-type(1) {
+	width: 78em;
+	display: inline-block;
+	background-color: rgb(122, 122, 122);
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+main {
+	width: 46em;
+	background-color: rgb(122, 122, 122);
+	display: inline-block;
+	text-align: center;
+	margin-right: 1em;
+	text-align: center;
+}
+
+main > article:nth-of-type(1) {
+	width: 44em;
+	background-color: #eee;
+	display: inline-block;
+	margin: 2em 0em 2em 0em;	
+}
+
+main > article:nth-of-type(1) > p {
+	width: 40em;
+	height: 10em;
+	display: inline-block;
+	background-color: rgb(122, 122, 122);
+}
+
+main> article:nth-of-type(1) > blockquote {
+	width: 20em;
+	height: 2em;
+	float: right;
+	background-color: rgb(122, 122, 122);
+	margin-right: 2em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+aside {
+	width: 31em;
+	display: inline-block;
+	text-align: center;
+	background-color: rgb(122, 122, 122);
+	vertical-align: top;
+}
+
+aside section {
+	width: 29em;
+	height: 18.3em;
+	display: inline-block;
+	background-color: #eee;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+h1 {
+	font-size: 2em;
+}
